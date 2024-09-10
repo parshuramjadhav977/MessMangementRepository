@@ -30,11 +30,16 @@ public class TrackAttendanceController extends HttpServlet {
 		int mtid=Integer.parseInt(request.getParameter("mealtype"));
 		int aStatus=1;
 		AttenedanceService aService=new AttenedanceServiceImpl();
-		boolean b=aService.trackAttendance(rid,date,aStatus,mtid);
+		boolean  b=aService.trackAttendance(rid,date,aStatus,mtid);
 		
 		if(b) {
 			request.setAttribute("msg", "Attendance tracked successfully");
-		}else {
+		}
+//		else if(b==-1) {
+//			request.setAttribute("msg", "Attendance Already tracked");
+//		}
+		
+		else {
 			request.setAttribute("msg", "Attendance NOT tracked successfully");
 		}
 		RequestDispatcher r=request.getRequestDispatcher("attendenceTrack.jsp");

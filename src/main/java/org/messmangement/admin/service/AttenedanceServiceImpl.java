@@ -11,7 +11,8 @@ public class AttenedanceServiceImpl implements AttenedanceService{
 	@Override
 	public boolean trackAttendance(int rid,Date date, int aStatus, int mtid) {
 		
-		return aRepository.trackAttendance(rid, date, aStatus, mtid);
+		//return aRepository.isAttendnaceTracked(rid, date, aStatus, mtid)?-1:aRepository.trackAttendance(rid, date, aStatus, mtid)?1:0;
+	return aRepository.trackAttendance(rid, date, aStatus, mtid);
 	}
 	@Override
 	public List<Object[]> getAllAttendance() {

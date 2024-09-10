@@ -77,4 +77,17 @@ public class AttenedanceRepositoryImpl extends DBConfig implements AttenedanceRe
 		}
 	}
 
+//	@Override
+//	public boolean isAttendnaceTracked(int rid, Date date, int aStatus, int mtid) {
+//		try {
+//			stmt=conn.prepareStatement("select adate,status,mtid from attendence where rid=?");
+//			stmt.setInt(1, rid);
+//			rs=stmt.executeQuery();
+//			return rs.next();
+//		}catch(Exception e) {
+//			System.out.println("Error is "+e);
+//			return false;
+//		}
+//	}
+
 }

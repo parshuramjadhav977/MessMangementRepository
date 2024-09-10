@@ -86,6 +86,9 @@
    width: 7em;
    
 }
+#ss{
+      color:#eaf20d;
+    }
 </style>
 </head>
 <body>
@@ -131,10 +134,10 @@
             </div>
             <div class="row display-6 p-md-5 mt-5" id="bgimg">
                 <div class="col-md-5 offset-md-1 middletext poetsen-one-regular">
-                    <p class="fst-italic fw-bold fs-4">WELCOME TO MESS</p>
+                    <p class="fst-italic fw-bold fs-4 mt-5">WELCOME TO HOMES KITCHEN..!</p>
                     <p class="fst-italic fw-bold">ENJOY YOUR DELICIOUS FOOD</p>
                     <p class="fw-bold">VEG & NON VEG MESS</p>
-                    <p class="fw-bold fst-italic text-info">WE ARE JUST A CALL AWAY
+                    <p class="fw-bold fst-italic" id="ss">WE ARE JUST A CALL AWAY
                         9090568780</p>
                 </div>
                 <div class="col-md-5 offset-md-1">
